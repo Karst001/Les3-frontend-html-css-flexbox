@@ -3,10 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../do-not-edit.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>NOVI Flexbox opdracht 2</title>
+
+    <!-- CSS for just the layout -->
+    <link rel="stylesheet" href="main-layout-style.css">
+
+    <!-- CSS for just the navigation -->
+    <link rel="stylesheet" href="navigator-style.css">
+
+    <title>Title</title>
 </head>
 <body>
-    <p>It's Flexbox time!</p>
+<div class="flex-container">
+    <div class="left-container">
+        <div class="flex-nav">
+            <div class="nav-top">
+                <div class="company-logo">
+                    <img src="../assets/logo-acme.svg" alt="Company logo"/>
+                    <p>NOVI Futuristic Inc</p>
+                </div>
+
+                <div class="menu-container">
+                    <menu class="menu-item">
+                        <li>
+                            <a href="">
+                                <img src="../assets/home.svg" alt="Home">Dashboard
+                            </a>
+                        </li>
+                    </menu>
+
+                    <menu class="menu-item">
+                        <li>
+                            <a href="">
+                                <img src="../assets/apps.svg" alt="Projecten">Projecten
+                            </a>
+                        </li>
+                    </menu>
+
+                    <menu class="menu-item">
+                        <li>
+                            <a href="">
+                                <img src="../assets/calendar.svg" alt="Opleiding en trainingen">Opleiding en trainingen
+                            </a>
+                        </li>
+                    </menu>
+
+                    <menu class="menu-item">
+                        <li>
+                            <a href="">
+                                <img src="../assets/graduation-cap.svg" alt="Cursusmateriaal">Cursusmateriaal
+                            </a>
+                        </li>
+                    </menu>
+                </div>
+            </div>
+            <div class="nav-bottom">
+                <div class="button-container">
+                    <button class="button-primary">Meld je aan</button>
+                    <button class="button-secondary">Login</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="right-container">
+        <div class="flex-content">
+            <div class="content-top">
+                <header>
+                    <div class="header-container">
+                        <h1>
+                            Opleidingsaanbod
+                        </h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Alias amet assumenda deleniti ducimus error id
+                            impedit in ipsam posso!</p>
+                    </div>
+
+                </header>
+                <main>
+                    <div class="products-container">
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>Web Developer</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€5800,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>C# Developer</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€4850,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>Databases</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€2295,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>Web API's</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€2650,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>Networking</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€1999,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+
+                        <article class="product-item">
+                            <img class="product-item-image" src="../assets/placeholder-image.svg" alt="placeholder-image">
+                            <h3>JavaScript</h3>
+                            <p>
+                                Korte omschrijving van deze opleiding
+                            </p>
+                            <div class="item-price-container">
+                                <span class="item-price">€2395,00</span>
+                                <img src="/assets/users-alt.svg" alt="users-alt" width="20" height="20">
+                            </div>
+                            <button class="button-secondary">Inschrijven</button>
+                        </article>
+                    </div>
+
+                </main>
+            </div>
+
+            <div class="content-bottom">
+                <footer>
+                    <span>&#169;</span>                 <!-- shows the Copyright symbol -->
+                    NOVI Hogeschool
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

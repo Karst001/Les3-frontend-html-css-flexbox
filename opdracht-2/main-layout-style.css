@@ -1,0 +1,162 @@
+/****************** body styling *******************/
+body {
+    overflow-x: hidden;             /* hide the scroll bar */
+    overflow-y: hidden;             /* hide the scroll bar */
+    height: 100%;
+    font-size: 25px;
+}
+
+:root {
+    --header-height: 280px;         /* variable because it is used 2 times, easier to adjust later */
+}
+
+/****************** layout styling *******************/
+.flex-container {                   /* defines the page  */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.left-container {                   /* defines the left div */
+    height: 100vh;
+    width: 250px;
+    flex-basis: 400px;
+}
+
+.right-container {                  /* defines the right div */
+    height: 100vh;
+    width: 100%;                    /* is balance of flex-container less left-container */
+}
+
+
+/****************** navigation styling *******************/
+.flex-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.nav-top {                          /* holds the menu items */
+    height: 100%;
+    width: 100%;
+    background: lightgrey
+}
+
+.nav-bottom {                       /* holds the buttons */
+    height: 145px;
+    width: 100%;
+}
+
+.button-container {                 /* wrapper for 2 buttons */
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+
+
+/****************** content styling *******************/
+.flex-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content-top {                      /* wrapper for header & main */
+    height: 96%;
+    width: 100%;
+}
+
+.content-bottom {                   /* wrapper for footer */
+    height: 4%;
+    width: 100%;
+    background-color: #383838;
+}
+
+
+/****************** header styling *******************/
+.header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    gap: 15px;
+}
+
+header {
+    background-image: url('../assets/placeholder-image.svg');
+    background-position: center;
+    height: var(--header-height);
+    width: 100%;
+}
+
+.header-container p {
+    width: 65%;
+    margin: auto;
+    font-size: 22px;
+}
+
+.header-container h1 {
+    padding-top: 90px
+}
+
+
+/****************** main styling *******************/
+main {
+    background-color: #FAF6F6;
+    height: calc(100% - var(--header-height));         /* var(--header-height) is the header set in the root */
+}
+
+
+/****************** footer styling *******************/
+footer {
+    text-align: center;
+    justify-content: center;
+    height: calc(100vh - 40px);
+    /*height: 100%;*/
+    color: white;
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+/****************** content articles styling *******************/
+.products-container {
+    display: flex;
+    flex-wrap: wrap;                    /* wraps the item onto the next line when running out of space */
+    justify-content: center;            /* places the content in the center */
+    gap: 25px;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    max-height: 100%;                   /* needed to keep the elements inside the container */
+    overflow-x: auto;                   /* prevents the elements from overflowing into footer */
+}
+
+.product-item {
+    width: 260px;                       /* fixed width of item */
+    border-radius: 8px;
+    padding: 10px;
+    text-align: left;
+}
+
+.product-item-image {
+    width: 100%;                        /* fits image into the container */
+    height: auto;                       /* keeps aspect ratio of image*/
+    border-radius: 8px;
+}
+
+.item-price-container {
+    display: flex;
+    justify-content: space-between;     /* spaces the img and value evenly */
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.item-price {
+    font-weight: bold;
+}

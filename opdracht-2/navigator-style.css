@@ -1,0 +1,56 @@
+/****************** company logo styling *******************/
+.company-logo {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+/****************** buttons at bottom of page styling *******************/
+.button-container {
+    padding: 20px;
+    background: lightgrey
+}
+
+.button-primary,
+.button-secondary {
+    background-color: white;
+    width: 100%;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-secondary {
+    background-color: #383838;
+    color: white;
+    cursor: pointer;
+}
+
+/****************** menu items styling *******************/
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 5px;
+}
+
+.menu-container {
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+li a {
+    font-size: 22px;
+}
+
+.menu-item li a {
+    display: flex;
+    column-gap: 5px;
+}
+
+li {
+    list-style-type: none;              /* remove the bullet points */
+}
