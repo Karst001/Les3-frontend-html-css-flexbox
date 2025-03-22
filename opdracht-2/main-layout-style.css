@@ -101,7 +101,7 @@ header {
 }
 
 .header-container h1 {
-    padding-top: 90px
+    padding-top: 75px
 }
 
 
@@ -117,7 +117,6 @@ footer {
     text-align: center;
     justify-content: center;
     height: calc(100vh - 40px);
-    /*height: 100%;*/
     color: white;
     font-size: 14px;
     padding-top: 8px;
